@@ -1,0 +1,36 @@
+import { StyleSheet, Text, View } from 'react-native';
+import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
+import '@/global.css';
+import { Button, ButtonText } from "@/components/ui/button"
+
+export default function App() {
+  return (
+
+    <GluestackUIProvider mode="dark">
+      <View style={styles.container}>
+        <Text>Página Home</Text>
+        <Button className="bg-blue-300">
+          <ButtonText className='color-white font-bold'>Primeiro Botão</ButtonText>
+        </Button>
+        
+        <Button className="bg-blue-300">
+          <ButtonText className='color-white font-bold'>Primeiro Botão</ButtonText>
+        </Button>
+
+        <Button className="bg-blue-300">
+          <ButtonText className='color-white font-bold'>Primeiro Botão</ButtonText>
+        </Button>
+      </View>
+    </GluestackUIProvider>
+
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
